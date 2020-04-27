@@ -1,0 +1,99 @@
+import java.util.*;
+import java.lang.Math.*;
+import java.io.*;
+class converter{
+	public String convert(int a)//returns the binary of the number entered......
+	{
+		int n=a%10;
+		switch(n){
+		case 0:
+		return "00000";
+		case 1:
+		return "00001";
+		case 2:
+		return "00010";
+		case 3:
+		System.out.println("hi");
+		return "00011";
+		case 4:
+		return "00100";
+		case 5:
+		return "00101";
+		case 6:
+		return "00110";
+		case 7:
+		return "00111";
+		case 8:
+		return "01111";
+		case 9:
+		return "10001";
+		default:
+		return "wrong input";
+		}
+	}
+}
+class ret_digit{
+	public int digit(int x,int n)//where n is the serial number of digit tobe found and x is the number whose digits are extracted.
+	{
+		int y=0;
+		int h=0;
+		while (y<n) { // 
+		   h=x%10;
+		   y++;
+		}
+		return h;
+	}
+}//JAVA HAS NOOO STRUCT SO WE HAVE TO MAKE A CLASS INSTEAD.
+/*class linked_list{
+	public Node head;
+	public Node tail;
+	class Node{
+		int data;
+		Node next;
+		Node(int d)//while creating a new node you have to put in a value for the data that it will hold.
+		{
+			data=d;
+			this.next=null;
+		}
+	}
+	public void addnode(int a)
+	{
+		Node n =new Node(a);
+		if (head==null) { // 
+		   head=n;
+		   tail=n;
+		}
+		else
+		{
+			tail.next=n;
+			tail=n;
+		}
+	}
+
+	
+}*/
+class dbms{
+public static void main(String[] args) {
+	int gd;
+	int ld;
+	int bfr;
+	System.out.println("enter the values of bfr,global and local depth");
+	Scanner sc=new Scanner(System.in);
+	bfr=sc.nextInt();
+	gd=sc.nextInt();
+	ld=sc.nextInt();
+	int number=(int)(Math.pow(2.00000,gd));
+	ArrayList<LinkedList>alist=new ArrayList<LinkedList>();
+	//LinkedList L[]=new LinkedList();
+	for (int i = 0; i < number; i += 1)
+	{
+	//	L[i]=new LinkedList();
+		LinkedList l1=new LinkedList();
+		
+		alist.add(l1);
+	}
+	alist[0].add("bunty");
+//	int u=alistsize();
+	System.out.println(alist);
+}
+}
